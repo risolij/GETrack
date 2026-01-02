@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+        <title>GETrack</title>
+        <link rel="stylesheet" href="getrack/styles-36720c5b4e3a2991.css" integrity="sha384-d8uRiw3m2MKZOf5IsEpAyIGs28gNJMmi/0LxRXLr+7lwW2rASGZce+GL/kO8nmpa"/>
+        
+        <base href="getrack/" />
+    <link rel="modulepreload" href="getrack/getrack-2e0a0c419998bc40.js" crossorigin="anonymous" integrity="sha384-uAUHq/zQD5TxJ1btqhvEbmib+RFOs/CiIpUlv9mDne0HmTxxk7XU6KL5dMCxqhd2"><link rel="preload" href="getrack/getrack-2e0a0c419998bc40_bg.wasm" crossorigin="anonymous" integrity="sha384-dCTQn95FYYd22oTO7EwOkqjp4bgLI2KlmmyGYOxOMl+lfSqO2rzUecXbAPsLd4SQ" as="fetch" type="application/wasm"></head>
+    <body>
+<script type="module">
+import init, * as bindings from 'getrack/getrack-2e0a0c419998bc40.js';
+const wasm = await init({ module_or_path: 'getrack/getrack-2e0a0c419998bc40_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
