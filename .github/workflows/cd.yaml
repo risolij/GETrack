@@ -25,7 +25,7 @@ jobs:
           version: 'latest'
 
       - name: Trunk Build
-        run: trunk build --public-url /ge --release
+        run: trunk build --public-url /GETrack --release
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
