@@ -33,6 +33,8 @@ jobs:
           path: ./dist
 
   deploy:
+    environment:
+      name: github-pages
     runs-on: ubuntu-latest
     needs: build
     permissions:
