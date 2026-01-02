@@ -1,0 +1,25 @@
+* GETrack
+Experimental yew application for tracking GE Prices.
+
+** Visit Portfolio Website
+[[https://risolij.github.io/getrack]]
+
+** Install
+*** Clone repo
+#+begin_src
+git clone git@github.com:risolij/getrack.git
+#+end_src
+
+*** Install dependencies
+Once dependencies are installed the flake.nix should download the project requirements automagically upon entering project root. The only two manual installations are
+- Install nix package manager / language
+- Install direnv
+
+*** Run it
+#+begin_src sh
+cd getrack
+#+end_src
+
+#+begin_src sh
+trunk serve
+#+end_src
